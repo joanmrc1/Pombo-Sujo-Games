@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+.navbar-custom {
+    height: 10%;  
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+}
+
+.navbar-header > a, span  {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white !important;
+}
+
+.navbar-collapse > ul > li > a {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white !important;
+}
+
+header {
+    height: 95%;
+    background-image: url('../Imgs/ProjetoTech.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.Titulo {
+    font-size: 20px;
+}
+
+.Intro {
+    margin-top: 10%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.BtnGrande {
+    margin-top: 30% !important;
+    width: 19%;
+    height: 10%;
+    color: white;
+    font-size: 25px;
+    background-color: #fec503;
+}
+
+.BtnGrande:hover {
+    background-color: #fec503;
+    border-color: #fec503;
+}
+
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+    background-color: black;
+ }
+
+
