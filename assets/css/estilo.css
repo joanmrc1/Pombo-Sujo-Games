@@ -68,6 +68,23 @@ header {
     color: rgb(10, 10, 10) !important;
 }
 
+.Projetos > h2 {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;    
+    color: rgb(10, 10, 10) !important;
+    margin-top: 50px;
+}
+
+.Portifolio > h2 {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;    
+    color: rgb(10, 10, 10) !important;
+}
+
 .LinhaQuemSomos > li{
     list-style: none;
 }
@@ -82,4 +99,32 @@ header {
 
 .TextoLadoEsquerdo {
     float: left;
+}
+
+.ImgTechKids {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.imgAtireinogatoto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.imgStoleneggs{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.imgPignauta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
