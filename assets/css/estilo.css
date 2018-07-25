@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 
+body {
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .navbar-custom {
     height: 10%;  
     margin: 0 auto;
@@ -56,8 +66,14 @@ header {
     text-align: center;
     color: white;
 }
+
+#QuemSomos {
+    margin-top: 10%;
+}
+
 .QuemSomosTitulo {
     margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .QuemSomosTitulo > h2 {
@@ -68,18 +84,65 @@ header {
     color: rgb(10, 10, 10) !important;
 }
 
-.LinhaQuemSomos > li{
+.Painel > li{
     list-style: none;
 }
 
-.img-circle {
-    border-radius: 50%;
+@media (max-width: 768px) {
+    .Painel > li{
+        margin-bottom: 50px;
+        position: relative;
+        min-height: 50px;
+    }
 }
 
-.ImgLadoDireito {
-    float: right;
+.Painel-Img {
+    margin-top: 2%;
+    position: absolute;
+    z-index: 100;
+    color: white;
+    border-radius: 100%;
+    border: 7px solid #f1f1f1;
+    text-align: center;
+    left: 46%;
 }
 
-.TextoLadoEsquerdo {
+.Painel-Img > img {
+    height: 150px;
+    width: 150px;
+}
+
+@media (max-width: 768px) { 
+    .Painel-Img {
+        left: 0;
+        margin-left: -9%;
+        position: absolute;
+        z-index: 100;
+        color: white;
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    .Painel-Img > img {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+.Painel > li > div.Painel-Text {
+    padding: 0 20px 20px 100px;
+    font-size: 14px;
+    width: 41%;
     float: left;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .Painel > li > div.Painel-Text {
+        width: 100%;
+        float: right;
+        padding: 0 20px 0 100px;
+        position: relative;
+        text-align: left;
+    }
 }
