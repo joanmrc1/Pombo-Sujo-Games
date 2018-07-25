@@ -20,6 +20,8 @@ h1,h2,h3,h4,h5,h6 {
     transition: padding 0.3s;
     border: none;
 }
+
+
 @media (min-width: 768px) {
     .navbar-custom.affix {
         background-color: #222222;
@@ -67,37 +69,85 @@ header {
     color: white;
 }
 
-#QuemSomos {
-    margin-top: 10%;
+#portfolio {
+    margin-top: 9%;
 }
 
-.QuemSomosTitulo {
-    margin-top: 10%;
-    margin-bottom: 10%;
+.PortfolioTitulo {
+    margin-bottom: 0%;
 }
-
-.QuemSomosTitulo > h2 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+.PortfolioTitulo > h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    font-weight: 700;
     letter-spacing: 1px;    
     color: rgb(10, 10, 10) !important;
+    font-weight: 600;
+    color: inherit;
 }
 
-.Painel > li{
+.SubTitulo > h3 {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.Painel {
+    position: relative;
+    padding: 0;
     list-style: none;
 }
 
-@media (max-width: 768px) {
-    .Painel > li{
-        margin-bottom: 50px;
-        position: relative;
-        min-height: 50px;
-    }
+.Painel > li:after, .Painel > li:before {
+    display: table;
+    content: ' ';
 }
 
-.Painel-Img {
-    margin-top: 2%;
+.Painel > li {
+    position: relative;
+    min-height: 70px;
+    margin-bottom: 70px;
+    list-style: none;
+}
+
+.Painel > li:after {
+    clear: both;
+}
+
+.Painel > li > .Painel-Text {
+    padding: 3% 0% 2% 9%;
+    font-size: 14px;
+    width: 41%;
+    float: left;
+    text-align: right;
+}
+
+.Painel > li.Invertido > .Painel-Text {
+    padding: 2% 1% 1% 6% !important;
+    font-size: 14px;
+    width: 41%;
+    float: right;
+    text-align: left;
+}
+
+.Painel > li > .Painel-Img {
+    margin-top: 4%;
+    position: absolute;
+    z-index: 100;
+    color: white;
+    border-radius: 100%;
+    border: 7px solid #f1f1f1;
+    text-align: center;
+    left: 46%;
+}
+
+.Painel > li.Invertido > .Painel-Img {
+    margin-top: 2% !important;
     position: absolute;
     z-index: 100;
     color: white;
@@ -112,7 +162,16 @@ header {
     width: 150px;
 }
 
-@media (max-width: 768px) { 
+
+/*@media (max-width: 768px) {
+    .Painel > li {
+        margin-bottom: 50px;
+        position: relative;
+        min-height: 50px;
+    }
+}*/
+
+/*@media (max-width: 768px) { 
     .Painel-Img {
         left: 0;
         margin-left: -9%;
@@ -127,17 +186,9 @@ header {
         width: 110px;
         height: 110px;
     }
-}
+}*/
 
-.Painel > li > div.Painel-Text {
-    padding: 0 20px 20px 100px;
-    font-size: 14px;
-    width: 41%;
-    float: left;
-    text-align: right;
-}
-
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .Painel > li > div.Painel-Text {
         width: 100%;
         float: right;
@@ -145,8 +196,10 @@ header {
         position: relative;
         text-align: left;
     }
-}
+}*/
 
+
+/*
 .ImgTechKids {
     display: block;
     margin-left: auto;
@@ -173,4 +226,4 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-}
+}*/
