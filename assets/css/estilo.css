@@ -11,26 +11,38 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .navbar-custom {
-    height: 10%;  
+    height: 11%;  
     margin: 0 auto;
-    background-color: transparent;
-    padding: 25px 0;
+    background-color: rgba(17, 17, 58, 0.466);
+    padding: 1% 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
     border: none;
 }
 
-
 @media (min-width: 768px) {
     .navbar-custom.affix {
-        background-color: #222222;
+        background-color: rgba(37, 37, 95, 0.76);
         padding: 0% 0;
         height: 5%;
     }
     .navbar-custom.affix .navbar-brand {
         font-size: 1.5em;
     }
+
+    .Icon {
+        margin-top: -4% !important;
+    }
+}
+
+.Icon {
+    margin-top: -6%; 
+}
+
+.Icon > .LogoImg {
+    width: 40px;
+    height: 40px;
 }
 
 .navbar-header > a, span  {
@@ -51,8 +63,13 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 1px;
     color: white !important;
 }
+
 .navbar-collapse > ul > li > a:hover{
     color: #fed136 !important;
+}
+
+.navbar-collapse > ul > li > a:active{
+    border-bottom: 2px outset red;
 }
 
 header {
@@ -118,20 +135,11 @@ header {
 .Painel > li:after {
     clear: both;
 }
-
-.Painel > li > .Painel-Text {
-    padding: 3% 0% 2% 9%;
-    font-size: 14px;
-    width: 41%;
-    float: left;
-    text-align: right;
-}
-
-.Painel > li.Invertido > .Painel-Text {
-    padding: 2% 1% 1% 6% !important;
-    font-size: 14px;
-    width: 41%;
+.Painel > li .Painel-Text {
+    width: 100%;
     float: right;
+    padding: 0 20px 0 100px;
+    position: relative;
     text-align: left;
 }
 
@@ -144,10 +152,12 @@ header {
     border: 7px solid #f1f1f1;
     text-align: center;
     left: 46%;
+    height: 150px;
+    width: 150px;
 }
 
 .Painel > li.Invertido > .Painel-Img {
-    margin-top: 2% !important;
+    margin-top: 3%;
     position: absolute;
     z-index: 100;
     color: white;
@@ -155,11 +165,66 @@ header {
     border: 7px solid #f1f1f1;
     text-align: center;
     left: 46%;
-}
-
-.Painel-Img > img {
     height: 150px;
     width: 150px;
+}
+
+@media (max-width: 768px) {
+
+    .Painel > li > .Painel-Img {
+        position: absolute;
+        z-index: 100;
+        border-radius: 0%;
+        border: 0px solid #f1f1f1;
+        text-align: center;
+        left: 0;
+        margin-left: 0;
+    }
+
+    .Painel > li.Invertido > .Painel-Img {
+        position: absolute;
+        border-radius: 0%;
+        border: 0px solid #f1f1f1;
+        z-index: 100;
+        text-align: center;
+        left: 0;
+        margin-left: 0;
+    }
+
+    .Painel > li > .Painel-Img > img {
+        width: 80px;
+        height: 100px;
+    }
+
+}
+
+@media (min-width: 992px) { 
+    
+    .Painel > li > .Painel-Img {
+        margin-top: 4%;
+        position: absolute;
+        z-index: 100;
+        color: white;
+        border-radius: 100%;
+        border: 7px solid #f1f1f1;
+        text-align: center;
+        left: 46%;
+        height: 150px;
+        width: 150px;
+    }
+
+    .Painel > li.Invertido > .Painel-Img {
+        margin-top: 2% !important;
+        position: absolute;
+        z-index: 100;
+        color: white;
+        border-radius: 100%;
+        border: 7px solid #f1f1f1;
+        text-align: center;
+        left: 46%;
+        height: 150px;
+        width: 150px;
+    }
 }
 
 
