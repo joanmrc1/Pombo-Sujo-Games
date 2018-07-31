@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .navbar-custom {
-    height: 11%;  
+    height: 10%;  
     margin: 0 auto;
     background-color: rgba(17, 17, 58, 0.466);
     padding: 1% 0;
@@ -23,10 +23,11 @@ h1,h2,h3,h4,h5,h6 {
 
 @media (min-width: 768px) {
     .navbar-custom.affix {
-        background-color: rgba(37, 37, 95, 0.76);
+        background-color: rgba(28, 28, 78, 0.76);
         padding: 0% 0;
         height: 5%;
     }
+
     .navbar-custom.affix .navbar-brand {
         font-size: 1.5em;
     }
@@ -34,6 +35,7 @@ h1,h2,h3,h4,h5,h6 {
     .Icon {
         margin-top: -4% !important;
     }
+
 }
 
 .Icon {
@@ -69,7 +71,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .navbar-collapse > ul > li > a:active{
-    border-bottom: 2px outset red;
+    border-bottom: 2px outset rgb(218, 39, 33);    
 }
 
 header {
@@ -120,6 +122,25 @@ header {
     list-style: none;
 }
 
+@media (min-width: 769px) {
+    
+    .Painel:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: "";
+        width: 2px;
+        background-color: #223655;
+        left: 40px;
+        margin-left: -1.5px;
+    }
+
+    .Painel:before {
+        left: 50%;
+    }
+
+}
+
 .Painel > li:after, .Painel > li:before {
     display: table;
     content: ' ';
@@ -135,70 +156,97 @@ header {
 .Painel > li:after {
     clear: both;
 }
+
+.Painel > li > .Painel-Img {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    border-radius: 100%;
+    border: 7px solid #f1f1f1;
+    text-align: center;
+    left: 44%;
+}
+
+.Painel > li.Invertido > .Painel-Img {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    border-radius: 100%;
+    border: 7px solid #f1f1f1;
+    text-align: center;
+    left: 44%;
+}
+
+.Painel > li > .Painel-Img > img {
+    height: 125px;
+    width: 125px;
+}
+
 .Painel > li .Painel-Text {
-    width: 100%;
+    width: 45%;
+    float: left;
+    padding: 0 40px 0 100px;
+    position: relative;
+    text-align: right;
+}
+
+.Painel > li.Invertido > .Painel-Text {
+    width: 45%;
     float: right;
-    padding: 0 20px 0 100px;
+    padding: 0 40px 0 40px;
     position: relative;
     text-align: left;
 }
 
-.Painel > li > .Painel-Img {
-    margin-top: 4%;
-    position: absolute;
-    z-index: 100;
-    color: white;
-    border-radius: 100%;
-    border: 7px solid #f1f1f1;
-    text-align: center;
-    left: 46%;
-    height: 150px;
-    width: 150px;
-}
 
-.Painel > li.Invertido > .Painel-Img {
-    margin-top: 3%;
-    position: absolute;
-    z-index: 100;
-    color: white;
-    border-radius: 100%;
-    border: 7px solid #f1f1f1;
-    text-align: center;
-    left: 46%;
-    height: 150px;
-    width: 150px;
-}
 
 @media (max-width: 768px) {
 
     .Painel > li > .Painel-Img {
         position: absolute;
         z-index: 100;
-        border-radius: 0%;
-        border: 0px solid #f1f1f1;
+        color: white;
+        border-radius: 100%;
+        border: 7px solid #f1f1f1;
         text-align: center;
         left: 0;
-        margin-left: 0;
     }
-
+    
     .Painel > li.Invertido > .Painel-Img {
         position: absolute;
-        border-radius: 0%;
-        border: 0px solid #f1f1f1;
         z-index: 100;
+        color: white;
+        border-radius: 100%;
+        border: 7px solid #f1f1f1;
         text-align: center;
-        left: 0;
-        margin-left: 0;
+        left: 0%;
     }
-
+    
     .Painel > li > .Painel-Img > img {
-        width: 80px;
-        height: 100px;
+        height: 125px;
+        width: 125px;
     }
 
+    .Painel > li .Painel-Text {
+        width: 100%;
+        float: left;
+        padding-left:150px;
+        position: relative;
+        text-align: left;
+    }
+    
+    .Painel > li.Invertido > .Painel-Text {
+        width: 100%;
+        float: left;
+        padding-left:150px;
+        position: relative;
+        text-align: left;
+    }
+    
+    
 }
 
-@media (min-width: 992px) { 
+/*@media (min-width: 992px) { 
     
     .Painel > li > .Painel-Img {
         margin-top: 4%;
@@ -225,7 +273,7 @@ header {
         height: 150px;
         width: 150px;
     }
-}
+}*/
 
 
 /*@media (max-width: 768px) {
